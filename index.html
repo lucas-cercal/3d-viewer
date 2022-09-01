@@ -20,5 +20,27 @@
             camera-controls
             auto-rotate
         ></model-viewer>
+        <button
+        id="open-ar-button"
+        slot="ar-button"
+        style="
+            background-color: blue;
+            color: white;
+            width: 100%;
+            height: 50px;
+            font-size: 20px;
+            margin-top: 10px;
+        "
+        >
+            ATIVAR REALIDADE AUMENTADA
+        </button>
+        <script>
+            let openAR = document.getElementById("open-ar-button")
+            let modelViewer = document.querySelector("model-viewer")
+
+            openAR.addEventListener("click", () => {
+                modelViewer.activateAR()
+            })
+        </script>
     </body>
 </html>
