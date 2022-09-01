@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <!-- Import the component -->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <title>3D/AR na web</title>
+    </head>
+    <body>
+        <model-viewer
+            style="
+                width: 100%;
+                height: 100%;
+            "
+            ar
+            ar-modes="scene-viewer quick-look webxr"
+            ar-scale="auto"
+            ar-placement="floor"
+            src="https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb"
+            environment-image="https://modelviewer.dev/shared-assets/environments/moon_1k.hdr" 
+            poster="https://modelviewer.dev/shared-assets/models/NeilArmstrong.webp"
+            shadow-intensity="1"
+            reveal="auto"
+            camera-controls
+            auto-rotate
+        ></model-viewer>
+    </body>
+</html>
